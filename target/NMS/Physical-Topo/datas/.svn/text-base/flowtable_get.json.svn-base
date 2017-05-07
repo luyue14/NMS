@@ -1,0 +1,981 @@
+{
+    "table": [
+        {
+            "id": "0",
+            "flow": [
+                {
+                    "id": "#UF$TABLE*0-202",
+                    "match": {
+                        "ipv4-destination": "16.12.0.232/32",
+                        "ethernet-match": {
+                            "ethernet-destination": {
+                                "address": "22:A2:A2:A2:A2:A2"
+                            }
+                        },
+                        "in-port": "openflow:3:5"
+                    },
+                    "table_id": 0,
+                    "priority": 16400,
+                    "cookie": 1945555039024060000,
+                    "idle-timeout": 0,
+                    "instructions": {
+                        "instruction": [
+                            {
+                                "order": 1,
+                                "go-to-table": {
+                                    "table_id": 1
+                                }
+                            },
+                            {
+                                "order": 0,
+                                "apply-actions": {
+                                    "action": [
+                                        {
+                                            "order": 1,
+                                            "set-field": {
+                                                "ethernet-match": {
+                                                    "ethernet-destination": {
+                                                        "address": "00:17:59:A1:6A:00"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "order": 0,
+                                            "set-field": {
+                                                "ethernet-match": {
+                                                    "ethernet-source": {
+                                                        "address": "22:A6:A6:A6:A6:A6"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "opendaylight-flow-statistics:flow-statistics": {
+                        "packet-count": 0,
+                        "duration": {
+                            "nanosecond": 317000,
+                            "second": 1662
+                        },
+                        "byte-count": 0
+                    },
+                    "flags": "",
+                    "hard-timeout": 0
+                },
+                {
+                    "id": "#UF$TABLE*0-201",
+                    "match": {
+                        "ipv4-destination": "16.12.0.232/32",
+                        "ethernet-match": {
+                            "ethernet-destination": {
+                                "address": "22:A1:A1:A1:A1:A1"
+                            }
+                        },
+                        "in-port": "openflow:3:4"
+                    },
+                    "table_id": 0,
+                    "priority": 16400,
+                    "cookie": 1945555039024060000,
+                    "idle-timeout": 0,
+                    "instructions": {
+                        "instruction": [
+                            {
+                                "order": 1,
+                                "go-to-table": {
+                                    "table_id": 1
+                                }
+                            },
+                            {
+                                "order": 0,
+                                "apply-actions": {
+                                    "action": [
+                                        {
+                                            "order": 1,
+                                            "set-field": {
+                                                "ethernet-match": {
+                                                    "ethernet-destination": {
+                                                        "address": "00:17:59:A1:6A:00"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "order": 0,
+                                            "set-field": {
+                                                "ethernet-match": {
+                                                    "ethernet-source": {
+                                                        "address": "22:A6:A6:A6:A6:A6"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "opendaylight-flow-statistics:flow-statistics": {
+                        "packet-count": 0,
+                        "duration": {
+                            "nanosecond": 422000,
+                            "second": 1662
+                        },
+                        "byte-count": 0
+                    },
+                    "flags": "",
+                    "hard-timeout": 0
+                },
+                {
+                    "id": "#UF$TABLE*0-69",
+                    "match": {
+                        "ip-match": {
+                            "ip-protocol": 1
+                        },
+                        "ethernet-match": {
+                            "ethernet-type": {
+                                "type": 2048
+                            }
+                        }
+                    },
+                    "table_id": 0,
+                    "priority": 8197,
+                    "cookie": 1945555039024055300,
+                    "idle-timeout": 0,
+                    "instructions": {
+                        "instruction": [
+                            {
+                                "order": 0,
+                                "apply-actions": {
+                                    "action": [
+                                        {
+                                            "order": 0,
+                                            "output-action": {
+                                                "output-node-connector": "CONTROLLER",
+                                                "max-length": 65535
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "opendaylight-flow-statistics:flow-statistics": {
+                        "packet-count": 0,
+                        "duration": {
+                            "nanosecond": 735000,
+                            "second": 1683
+                        },
+                        "byte-count": 0
+                    },
+                    "flags": "",
+                    "hard-timeout": 0
+                },
+                {
+                    "id": "#UF$TABLE*0-12",
+                    "match": {},
+                    "table_id": 0,
+                    "priority": 0,
+                    "cookie": 1945555039024054300,
+                    "idle-timeout": 0,
+                    "instructions": {
+                        "instruction": [
+                            {
+                                "order": 0,
+                                "apply-actions": {
+                                    "action": [
+                                        {
+                                            "order": 0,
+                                            "output-action": {
+                                                "output-node-connector": "CONTROLLER",
+                                                "max-length": 65535
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "opendaylight-flow-statistics:flow-statistics": {
+                        "packet-count": 1008,
+                        "duration": {
+                            "nanosecond": 678000,
+                            "second": 1708
+                        },
+                        "byte-count": 170533
+                    },
+                    "flags": "",
+                    "hard-timeout": 0
+                },
+                {
+                    "id": "#UF$TABLE*0-230",
+                    "match": {
+                        "ipv4-destination": "192.168.3.0/24",
+                        "ethernet-match": {
+                            "ethernet-destination": {
+                                "address": "22:A1:A1:A1:A1:A1"
+                            }
+                        },
+                        "in-port": "openflow:3:4"
+                    },
+                    "table_id": 0,
+                    "priority": 16640,
+                    "cookie": 1945555039024060000,
+                    "idle-timeout": 0,
+                    "instructions": {
+                        "instruction": [
+                            {
+                                "order": 1,
+                                "go-to-table": {
+                                    "table_id": 1
+                                }
+                            },
+                            {
+                                "order": 0,
+                                "apply-actions": {
+                                    "action": [
+                                        {
+                                            "order": 1,
+                                            "set-field": {
+                                                "ethernet-match": {
+                                                    "ethernet-destination": {
+                                                        "address": "22:C1:C1:C1:C1:C1"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "order": 0,
+                                            "set-field": {
+                                                "ethernet-match": {
+                                                    "ethernet-source": {
+                                                        "address": "22:A5:A5:A5:A5:A5"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "opendaylight-flow-statistics:flow-statistics": {
+                        "packet-count": 0,
+                        "duration": {
+                            "nanosecond": 327000,
+                            "second": 1661
+                        },
+                        "byte-count": 0
+                    },
+                    "flags": "",
+                    "hard-timeout": 0
+                },
+                {
+                    "id": "#UF$TABLE*0-231",
+                    "match": {
+                        "ipv4-destination": "192.168.3.0/24",
+                        "ethernet-match": {
+                            "ethernet-destination": {
+                                "address": "22:A2:A2:A2:A2:A2"
+                            }
+                        },
+                        "in-port": "openflow:3:5"
+                    },
+                    "table_id": 0,
+                    "priority": 16640,
+                    "cookie": 1945555039024060000,
+                    "idle-timeout": 0,
+                    "instructions": {
+                        "instruction": [
+                            {
+                                "order": 1,
+                                "go-to-table": {
+                                    "table_id": 1
+                                }
+                            },
+                            {
+                                "order": 0,
+                                "apply-actions": {
+                                    "action": [
+                                        {
+                                            "order": 1,
+                                            "set-field": {
+                                                "ethernet-match": {
+                                                    "ethernet-destination": {
+                                                        "address": "22:C1:C1:C1:C1:C1"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "order": 0,
+                                            "set-field": {
+                                                "ethernet-match": {
+                                                    "ethernet-source": {
+                                                        "address": "22:A5:A5:A5:A5:A5"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "opendaylight-flow-statistics:flow-statistics": {
+                        "packet-count": 0,
+                        "duration": {
+                            "nanosecond": 320000,
+                            "second": 1661
+                        },
+                        "byte-count": 0
+                    },
+                    "flags": "",
+                    "hard-timeout": 0
+                },
+                {
+                    "id": "#UF$TABLE*0-70",
+                    "match": {
+                        "ip-match": {
+                            "ip-protocol": 58
+                        },
+                        "ethernet-match": {
+                            "ethernet-type": {
+                                "type": 34525
+                            }
+                        }
+                    },
+                    "table_id": 0,
+                    "priority": 8197,
+                    "cookie": 1945555039024055600,
+                    "idle-timeout": 0,
+                    "instructions": {
+                        "instruction": [
+                            {
+                                "order": 0,
+                                "apply-actions": {
+                                    "action": [
+                                        {
+                                            "order": 0,
+                                            "output-action": {
+                                                "output-node-connector": "CONTROLLER",
+                                                "max-length": 65535
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "opendaylight-flow-statistics:flow-statistics": {
+                        "packet-count": 160,
+                        "duration": {
+                            "nanosecond": 678000,
+                            "second": 1683
+                        },
+                        "byte-count": 14012
+                    },
+                    "flags": "",
+                    "hard-timeout": 0
+                },
+                {
+                    "id": "#UF$TABLE*0-71",
+                    "match": {
+                        "ip-match": {
+                            "ip-protocol": 6
+                        },
+                        "ethernet-match": {
+                            "ethernet-type": {
+                                "type": 2048
+                            }
+                        },
+                        "tcp-destination-port": 179
+                    },
+                    "table_id": 0,
+                    "priority": 8197,
+                    "cookie": 1945555039024055300,
+                    "idle-timeout": 0,
+                    "instructions": {
+                        "instruction": [
+                            {
+                                "order": 0,
+                                "apply-actions": {
+                                    "action": [
+                                        {
+                                            "order": 0,
+                                            "output-action": {
+                                                "output-node-connector": "CONTROLLER",
+                                                "max-length": 65535
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "opendaylight-flow-statistics:flow-statistics": {
+                        "packet-count": 34,
+                        "duration": {
+                            "nanosecond": 966000,
+                            "second": 1683
+                        },
+                        "byte-count": 2475
+                    },
+                    "flags": "",
+                    "hard-timeout": 0
+                },
+                {
+                    "id": "#UF$TABLE*0-497",
+                    "match": {
+                        "ipv4-destination": "110.0.0.1/32",
+                        "ethernet-match": {
+                            "ethernet-destination": {
+                                "address": "22:A2:A2:A2:A2:A2"
+                            }
+                        },
+                        "in-port": "openflow:3:5"
+                    },
+                    "table_id": 0,
+                    "priority": 16720,
+                    "cookie": 1945555039024061200,
+                    "idle-timeout": 0,
+                    "instructions": {
+                        "instruction": [
+                            {
+                                "order": 1,
+                                "go-to-table": {
+                                    "table_id": 1
+                                }
+                            },
+                            {
+                                "order": 0,
+                                "apply-actions": {
+                                    "action": [
+                                        {
+                                            "order": 1,
+                                            "set-field": {
+                                                "ethernet-match": {
+                                                    "ethernet-destination": {
+                                                        "address": "00:17:94:06:97:80"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "order": 0,
+                                            "set-field": {
+                                                "ethernet-match": {
+                                                    "ethernet-source": {
+                                                        "address": "22:A1:A1:A1:A1:A1"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "opendaylight-flow-statistics:flow-statistics": {
+                        "packet-count": 0,
+                        "duration": {
+                            "nanosecond": 200000,
+                            "second": 7
+                        },
+                        "byte-count": 0
+                    },
+                    "flags": "",
+                    "hard-timeout": 0
+                },
+                {
+                    "id": "#UF$TABLE*0-74",
+                    "match": {
+                        "ip-match": {
+                            "ip-protocol": 6
+                        },
+                        "ethernet-match": {
+                            "ethernet-type": {
+                                "type": 2048
+                            }
+                        },
+                        "tcp-source-port": 646
+                    },
+                    "table_id": 0,
+                    "priority": 8197,
+                    "cookie": 1945555039024055600,
+                    "idle-timeout": 0,
+                    "instructions": {
+                        "instruction": [
+                            {
+                                "order": 0,
+                                "apply-actions": {
+                                    "action": [
+                                        {
+                                            "order": 0,
+                                            "output-action": {
+                                                "output-node-connector": "CONTROLLER",
+                                                "max-length": 65535
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "opendaylight-flow-statistics:flow-statistics": {
+                        "packet-count": 0,
+                        "duration": {
+                            "nanosecond": 568000,
+                            "second": 1683
+                        },
+                        "byte-count": 0
+                    },
+                    "flags": "",
+                    "hard-timeout": 0
+                },
+                {
+                    "id": "#UF$TABLE*0-75",
+                    "match": {
+                        "ip-match": {
+                            "ip-protocol": 6
+                        },
+                        "ethernet-match": {
+                            "ethernet-type": {
+                                "type": 2048
+                            }
+                        }
+                    },
+                    "table_id": 0,
+                    "priority": 8197,
+                    "cookie": 1945555039024055600,
+                    "idle-timeout": 0,
+                    "instructions": {
+                        "instruction": [
+                            {
+                                "order": 0,
+                                "apply-actions": {
+                                    "action": [
+                                        {
+                                            "order": 0,
+                                            "output-action": {
+                                                "output-node-connector": "CONTROLLER",
+                                                "max-length": 65535
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "opendaylight-flow-statistics:flow-statistics": {
+                        "packet-count": 0,
+                        "duration": {
+                            "nanosecond": 515000,
+                            "second": 1683
+                        },
+                        "byte-count": 0
+                    },
+                    "flags": "",
+                    "hard-timeout": 0
+                },
+                {
+                    "id": "#UF$TABLE*0-72",
+                    "match": {
+                        "ip-match": {
+                            "ip-protocol": 6
+                        },
+                        "ethernet-match": {
+                            "ethernet-type": {
+                                "type": 2048
+                            }
+                        },
+                        "tcp-destination-port": 646
+                    },
+                    "table_id": 0,
+                    "priority": 8197,
+                    "cookie": 1945555039024055600,
+                    "idle-timeout": 0,
+                    "instructions": {
+                        "instruction": [
+                            {
+                                "order": 0,
+                                "apply-actions": {
+                                    "action": [
+                                        {
+                                            "order": 0,
+                                            "output-action": {
+                                                "output-node-connector": "CONTROLLER",
+                                                "max-length": 65535
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "opendaylight-flow-statistics:flow-statistics": {
+                        "packet-count": 0,
+                        "duration": {
+                            "nanosecond": 595000,
+                            "second": 1683
+                        },
+                        "byte-count": 0
+                    },
+                    "flags": "",
+                    "hard-timeout": 0
+                },
+                {
+                    "id": "#UF$TABLE*0-498",
+                    "match": {
+                        "ipv4-destination": "110.0.0.1/32",
+                        "ethernet-match": {
+                            "ethernet-source": {
+                                "address": "22:A1:A1:A1:A1:A1"
+                            }
+                        }
+                    },
+                    "table_id": 0,
+                    "priority": 16720,
+                    "cookie": 1945555039024061200,
+                    "idle-timeout": 0,
+                    "instructions": {
+                        "instruction": [
+                            {
+                                "order": 0,
+                                "go-to-table": {
+                                    "table_id": 1
+                                }
+                            }
+                        ]
+                    },
+                    "opendaylight-flow-statistics:flow-statistics": {
+                        "packet-count": 0,
+                        "duration": {
+                            "nanosecond": 432000,
+                            "second": 6
+                        },
+                        "byte-count": 0
+                    },
+                    "flags": "",
+                    "hard-timeout": 0
+                },
+                {
+                    "id": "#UF$TABLE*0-73",
+                    "match": {
+                        "ip-match": {
+                            "ip-protocol": 6
+                        },
+                        "ethernet-match": {
+                            "ethernet-type": {
+                                "type": 2048
+                            }
+                        },
+                        "tcp-source-port": 179
+                    },
+                    "table_id": 0,
+                    "priority": 8197,
+                    "cookie": 1945555039024055300,
+                    "idle-timeout": 0,
+                    "instructions": {
+                        "instruction": [
+                            {
+                                "order": 0,
+                                "apply-actions": {
+                                    "action": [
+                                        {
+                                            "order": 0,
+                                            "output-action": {
+                                                "output-node-connector": "CONTROLLER",
+                                                "max-length": 65535
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "opendaylight-flow-statistics:flow-statistics": {
+                        "packet-count": 0,
+                        "duration": {
+                            "nanosecond": 907000,
+                            "second": 1683
+                        },
+                        "byte-count": 0
+                    },
+                    "flags": "",
+                    "hard-timeout": 0
+                },
+                {
+                    "id": "#UF$TABLE*0-203",
+                    "match": {
+                        "ipv4-destination": "16.14.0.232/32",
+                        "ethernet-match": {
+                            "ethernet-destination": {
+                                "address": "22:A1:A1:A1:A1:A1"
+                            }
+                        },
+                        "in-port": "openflow:3:4"
+                    },
+                    "table_id": 0,
+                    "priority": 16400,
+                    "cookie": 1945555039024060000,
+                    "idle-timeout": 0,
+                    "instructions": {
+                        "instruction": [
+                            {
+                                "order": 1,
+                                "go-to-table": {
+                                    "table_id": 1
+                                }
+                            },
+                            {
+                                "order": 0,
+                                "apply-actions": {
+                                    "action": [
+                                        {
+                                            "order": 1,
+                                            "set-field": {
+                                                "ethernet-match": {
+                                                    "ethernet-destination": {
+                                                        "address": "54:39:DF:CE:E9:E4"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "order": 0,
+                                            "set-field": {
+                                                "ethernet-match": {
+                                                    "ethernet-source": {
+                                                        "address": "22:A4:A4:A4:A4:A4"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "opendaylight-flow-statistics:flow-statistics": {
+                        "packet-count": 0,
+                        "duration": {
+                            "nanosecond": 887000,
+                            "second": 1661
+                        },
+                        "byte-count": 0
+                    },
+                    "flags": "",
+                    "hard-timeout": 0
+                },
+                {
+                    "id": "#UF$TABLE*0-204",
+                    "match": {
+                        "ipv4-destination": "16.14.0.232/32",
+                        "ethernet-match": {
+                            "ethernet-destination": {
+                                "address": "22:A2:A2:A2:A2:A2"
+                            }
+                        },
+                        "in-port": "openflow:3:5"
+                    },
+                    "table_id": 0,
+                    "priority": 16400,
+                    "cookie": 1945555039024060000,
+                    "idle-timeout": 0,
+                    "instructions": {
+                        "instruction": [
+                            {
+                                "order": 1,
+                                "go-to-table": {
+                                    "table_id": 1
+                                }
+                            },
+                            {
+                                "order": 0,
+                                "apply-actions": {
+                                    "action": [
+                                        {
+                                            "order": 1,
+                                            "set-field": {
+                                                "ethernet-match": {
+                                                    "ethernet-destination": {
+                                                        "address": "54:39:DF:CE:E9:E4"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "order": 0,
+                                            "set-field": {
+                                                "ethernet-match": {
+                                                    "ethernet-source": {
+                                                        "address": "22:A4:A4:A4:A4:A4"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "opendaylight-flow-statistics:flow-statistics": {
+                        "packet-count": 0,
+                        "duration": {
+                            "nanosecond": 835000,
+                            "second": 1661
+                        },
+                        "byte-count": 0
+                    },
+                    "flags": "",
+                    "hard-timeout": 0
+                },
+                {
+                    "id": "#UF$TABLE*0-76",
+                    "match": {
+                        "ip-match": {
+                            "ip-protocol": 17
+                        },
+                        "ethernet-match": {
+                            "ethernet-type": {
+                                "type": 2048
+                            }
+                        }
+                    },
+                    "table_id": 0,
+                    "priority": 8197,
+                    "cookie": 1945555039024055600,
+                    "idle-timeout": 0,
+                    "instructions": {
+                        "instruction": [
+                            {
+                                "order": 0,
+                                "apply-actions": {
+                                    "action": [
+                                        {
+                                            "order": 0,
+                                            "output-action": {
+                                                "output-node-connector": "CONTROLLER",
+                                                "max-length": 65535
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "opendaylight-flow-statistics:flow-statistics": {
+                        "packet-count": 80,
+                        "duration": {
+                            "nanosecond": 462000,
+                            "second": 1683
+                        },
+                        "byte-count": 27360
+                    },
+                    "flags": "",
+                    "hard-timeout": 0
+                },
+                {
+                    "id": "#UF$TABLE*0-67",
+                    "match": {
+                        "ip-match": {
+                            "ip-protocol": 89
+                        },
+                        "ethernet-match": {
+                            "ethernet-type": {
+                                "type": 2048
+                            }
+                        }
+                    },
+                    "table_id": 0,
+                    "priority": 8197,
+                    "cookie": 1945555039024055300,
+                    "idle-timeout": 0,
+                    "instructions": {
+                        "instruction": [
+                            {
+                                "order": 0,
+                                "apply-actions": {
+                                    "action": [
+                                        {
+                                            "order": 0,
+                                            "output-action": {
+                                                "output-node-connector": "CONTROLLER",
+                                                "max-length": 65535
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "opendaylight-flow-statistics:flow-statistics": {
+                        "packet-count": 0,
+                        "duration": {
+                            "nanosecond": 26000,
+                            "second": 1684
+                        },
+                        "byte-count": 0
+                    },
+                    "flags": "",
+                    "hard-timeout": 0
+                },
+                {
+                    "id": "#UF$TABLE*0-68",
+                    "match": {
+                        "ethernet-match": {
+                            "ethernet-type": {
+                                "type": "2054"
+                            }
+                        }
+                    },
+                    "instructions": {
+                        "instruction": [
+                            {
+                                "apply-actions": {
+                                    "action": [
+                                        {
+                                            "output-action": {
+                                                "output-node-connector": "CONTROLLER",
+                                                "max-length": "65535"
+                                            },
+                                            "order": "0"
+                                        }
+                                    ]
+                                },
+                                "order": "0"
+                            }
+                        ]
+                    },
+                    "priority": "8197",
+                    "idle-timeout": "0",
+                    "hard-timeout": "0",
+                    "cookie": "1945555039024055300",
+                    "table_id": "0",
+                    "flow-statistics": {
+                        "packet-count": "25",
+                        "byte-count": "1500",
+                        "duration": {
+                            "second": "1683",
+                            "nanosecond": "792000"
+                        }
+                    }
+                }
+            ],
+            "aggregate-flow-statistics": {
+                "packet-count": "1307",
+                "byte-count": "215880",
+                "flow-count": "19"
+            },
+            "flow-table-statistics": {
+                "active-flows": "19",
+                "packets-looked-up": "1325",
+                "packets-matched": "1319"
+            }
+        }
+    ]
+}

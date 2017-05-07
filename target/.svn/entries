@@ -1,0 +1,77 @@
+10
+
+dir
+384
+svn://10.108.104.101/openflow/nms/NMS/target
+svn://10.108.104.101/openflow
+
+
+
+2016-09-29T01:51:57.558495Z
+243
+admin
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+9e65a471-b401-4542-9e1e-5a7b9726a1b5
+
+NMS
+dir
+
+NMS.war
+file
+
+
+
+
+2016-12-27T12:05:47.000000Z
+1d7377722dbee8b221b43ccf5dc19003
+2016-09-26T07:17:01.706132Z
+240
+admin
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+14494043
+
+m2e-wtp
+dir
+
+maven-archiver
+dir
+
+maven-status
+dir
+
+test-classes
+dir
+

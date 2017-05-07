@@ -1,0 +1,31 @@
+10
+
+dir
+384
+svn://10.108.104.101/openflow/nms/NMS/target/maven-status
+svn://10.108.104.101/openflow
+
+
+
+2016-09-26T07:17:01.706132Z
+240
+admin
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+9e65a471-b401-4542-9e1e-5a7b9726a1b5
+
+maven-compiler-plugin
+dir
+

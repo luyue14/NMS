@@ -1,0 +1,228 @@
+*{margin:0px;padding:0px}
+body { font-family:Verdana; font-size:14px; margin:0; line-height:150%;}
+
+#container {margin:0px auto;width:100%}
+	#left{float:left;}
+		#canvas {border-bottom:1px solid black;border-right:1px solid black;}
+	#sidebar {float:right; height:600px; width:320px; overflow:auto;overflow-x: hidden;word-wrap: break-word;padding-top:20px;}
+		#text{border:0px solid black;}
+		#history{border:0px solid black;}
+		#new{border:0px solid black;}
+			#new form label{font-size:18px;}
+		.show{display:block;}
+		.hide{display:none;}
+.clearfloat { clear:both; height:0; font-size: 1px; line-height: 0px;}
+
+/*自定义 弹框样式*/
+		.popup{width:460px;height:auto;overflow:hidden;font:normal 20px/2em MicroSoft YaHei; }
+		.pop_title {height:40x; background:#2fade1;position:relative;text-align:center;}
+		.pop_title h4{height:40px;line-height:40px; color:#FFF;}
+		.popup .inner{padding:30px;background:#167CC5;}
+		.popup .inner .info{text-align:center;}
+/* 		.inner{color:white;} */
+		
+		
+
+
+/* 右侧栏 */
+.menu,
+.menu ul,
+.menu li,
+.menu a {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+}
+
+/* Menu */
+.menu {	
+	height: 40px;
+	width: auto;
+	display:inline-block;
+
+	background: #4c4e5a;
+	background: -webkit-linear-gradient(top, #4c4e5a 0%,#2c2d33 100%);
+	background: -moz-linear-gradient(top, #4c4e5a 0%,#2c2d33 100%);
+	background: -o-linear-gradient(top, #4c4e5a 0%,#2c2d33 100%);
+	background: -ms-linear-gradient(top, #4c4e5a 0%,#2c2d33 100%);
+	background: linear-gradient(top, #4c4e5a 0%,#2c2d33 100%);
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.menu li {
+	position: relative;
+	list-style: none;
+	float: left;
+	display: block;
+	height: 40px;
+}
+
+/* Links */
+
+.menu li a {
+	display: block;
+	padding: 0 14px;
+	margin: 6px 0;
+	line-height: 28px;
+	text-decoration: none;
+	
+	border-left: 1px solid #393942;
+	border-right: 1px solid #4f5058;
+
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+
+	color: #f3f3f3;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+
+	-webkit-transition: color .2s ease-in-out;
+	-moz-transition: color .2s ease-in-out;
+	-o-transition: color .2s ease-in-out;
+	-ms-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out;
+}
+
+.menu li:first-child a { border-left: none; }
+.menu li:last-child a{ border-right: none; }
+
+.menu li:hover > a { color: #8fde62; }
+
+/* Sub Menu */
+
+.menu ul {
+	position: absolute;
+	top: 40px;
+	left: 0;
+
+	opacity: 0;
+	
+	background: #1f2024;
+
+	-webkit-border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
+	border-radius: 0 0 5px 5px;
+
+	-webkit-transition: opacity .25s ease .1s;
+	-moz-transition: opacity .25s ease .1s;
+	-o-transition: opacity .25s ease .1s;
+	-ms-transition: opacity .25s ease .1s;
+	transition: opacity .25s ease .1s;
+}
+
+.menu li:hover > ul { opacity: 1; }
+
+.menu ul li {
+	height: 0;
+	overflow: hidden;
+	padding: 0;
+
+	-webkit-transition: height .25s ease .1s;
+	-moz-transition: height .25s ease .1s;
+	-o-transition: height .25s ease .1s;
+	-ms-transition: height .25s ease .1s;
+	transition: height .25s ease .1s;
+}
+
+.menu li:hover > ul li {
+	height: 36px;
+	overflow: visible;
+	padding: 0;
+}
+
+.menu ul li a {
+	width: 100px;
+	padding: 4px 0 4px 40px;
+	margin: 0;
+
+	border: none;
+	border-bottom: 1px solid #353539;
+}
+
+.menu ul li:last-child a { border: none; }
+
+ul.menu { margin: 0px auto 0 auto; }
+p,p a{font-size:12px;color:#666;}
+
+
+/* 右侧栏中 */
+/*侧栏的格式*/
+			*:focus{
+				outline:none; /* Prevents blue border in Webkit */
+			}
+
+			body {
+				font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /*  */
+			}
+			
+			#top_bit {
+				width:760px;
+				margin: 0 auto;
+			}
+			
+			form {
+				width:300px;
+				margin: 20px auto;
+			}
+
+			p {
+				line-height: 1.6;
+			}
+
+			input {
+				font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+				background-color:#fff;
+				border:1px solid #ccc;
+				font-size:20px;
+				width:300px;
+				min-height:30px;
+				display:block;
+				margin-bottom:16px;
+				margin-top:8px;
+				
+				-webkit-border-radius:5px;
+				-moz-border-radius:5px;
+				border-radius:5px;
+				
+				-webkit-transition: all 0.5s ease-in-out;
+				-moz-transition: all 0.5s ease-in-out;
+				transition: all 0.5s ease-in-out;
+			}
+			
+			input:focus {
+				-webkit-box-shadow:0 0 25px #ccc;
+				-moz-box-shadow:0 0 25px #ccc;
+				box-shadow:0 0 25px #ccc;
+				
+				-webkit-transform: scale(1.05);
+				-moz-transform: scale(1.05);
+				transform: scale(1.05);
+			}
+			
+			/* The interesting bit */
+			
+			input:not(:focus){
+				opacity:0.5;
+			}
+			
+			input:required{
+				background:url("../images/asterisk_orange.png") no-repeat 280px 7px;						
+			}
+
+			input:valid{
+				background:url("../images/tick.png") no-repeat 280px 5px;			
+			}		
+
+			input:focus:invalid{
+				background:url("../images/cancel.png") no-repeat 280px 7px;						
+			}
+
+			input[type=button] {
+				padding:5px;
+				background-color:#167CC5;
+				opacity:1.0;
+			}

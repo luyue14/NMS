@@ -1,0 +1,65 @@
+[
+  {
+     "dpId": "openflow:2",
+     "port": 3,
+     "macAddress": "22:a2:a2:a2:a2:a2",
+     "ipAddress" : "70.0.0.1",
+     "network"   : "70.0.0.0/24"
+  },
+  {
+     "dpId": "openflow:3",
+     "port": 4,
+     "macAddress": "22:c2:c2:c2:c2:c2",
+     "ipAddress" : "110.0.0.2",
+     "network"   : "110.0.0.0/24"
+  },
+  {
+     "dpId": "openflow:3",
+     "port": 5,
+     "macAddress": "22:c3:c3:c3:c3:c3",
+     "ipAddress" : "192.168.4.1",
+     "network"   : "192.168.4.0/24"
+  },
+  {
+     "dpId": "openflow:4",
+     "port": 4,
+     "macAddress": "22:c4:c4:c4:c4:c4",
+     "ipAddress" : "192.168.7.1",
+     "network"   : "192.168.7.0/24"
+  },
+  {
+     "dpId": "openflow:4",
+     "port": 5,
+     "macAddress": "22:c5:c5:c5:c5:c5",
+     "ipAddress" : "192.168.6.1",
+     "network"   : "192.168.6.0/24"
+  },
+  {
+     "dpId": "openflow:5",
+     "port": 4,
+     "macAddress": "22:c7:c7:c7:c7:c7",
+     "ipAddress" : "172.25.2.110",
+     "network"   : "172.25.2.0/24"
+  },
+  {
+     "dpId": "openflow:5",
+     "port": 5,
+     "macAddress": "22:c8:c8:c8:c8:c8",
+     "ipAddress" : "192.168.5.1",
+     "network"   : "192.168.5.0/24"
+  },
+  {
+     "dpId": "openflow:6",
+     "port": 4,
+     "macAddress": "22:b3:b3:b3:b3:b3",
+     "ipAddress" : "192.168.3.1",
+     "network"   : "192.168.3.0/24"
+  },
+  {
+     "dpId": "openflow:6",
+     "port": 5,
+     "macAddress": "22:b4:b4:b4:b4:b4",
+     "ipAddress" : "172.25.1.101",
+     "network"   : "172.25.1.0/24"
+  }
+]

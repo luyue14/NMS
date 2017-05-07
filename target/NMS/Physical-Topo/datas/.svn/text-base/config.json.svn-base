@@ -1,0 +1,64 @@
+﻿{
+    "configId": 1,
+    "link": [
+        {
+            "linkId": "host:32:a9:7f:9e:e5:ed/openflow:4:2",
+            "sourceMac": "11:11:11:11:11:33",
+            "sourceIp": "10.0.0.252",
+            "destMac": "22:22:22:22:22:44",
+            "destIp": "10.0.0.253"
+        },
+        {
+            "linkId": "openflow:5:2",
+            "sourceMac": "11:11:11:11:11:11",
+            "sourceIp": "10.0.0.250",
+            "destMac": "22:22:22:22:22:22",
+            "destIp": "10.0.0.251"
+        },
+        {
+            "linkId": "openflow:3:1/host:7a:bd:df:10:03:eb",
+            "sourceMac": null,
+            "sourceIp": null,
+            "destMac": null,
+            "destIp": null
+        }
+    ],
+    "node": [
+        {
+            "nodeId": "host:test",
+            "nodeName": "主机1",
+			"xCoordinate": null,
+            "yCoordinate": null
+        },
+        {
+            "nodeId": "host:32:a9:7f:9e:e5:ed",
+            "nodeName": "主机2",
+			"xCoordinate": null,
+            "yCoordinate": null
+        },
+		{
+            "nodeId": "openflow:1",
+            "nodeName": null,
+            "xCoordinate": null,
+            "yCoordinate": null
+        },
+		{
+            "nodeId": "openflow:2",
+            "nodeName": null,
+            "xCoordinate": null,
+            "yCoordinate": null
+        },
+        {
+            "nodeId": "openflow:3",
+            "nodeName": null,
+            "xCoordinate": null,
+            "yCoordinate": null
+        },
+        {
+            "nodeId": "openflow:4",
+            "nodeName": null,
+            "xCoordinate": null,
+            "yCoordinate": null
+        }
+    ]
+}

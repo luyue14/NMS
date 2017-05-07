@@ -1,0 +1,31 @@
+*{margin:0px;padding:0px;}
+body{margin-top:25px;}
+h1{text-align:center;margin:10px auto 10px auto;}
+h2{margin:5px 0px 5px 0px;font-weight:bolder;}
+p{text-indent:2em;margin:5px 0px 5px 0px;font-size:14pt;line-height:150%;}
+#hovertable {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #999999;
+	border-collapse: collapse;
+	text-align:center;margin:0px auto;
+}
+#hovertable th {
+	background-color:#c3dde0;
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #a9c6c9;
+}
+#hovertable tr {
+	background-color:#d4e3e5;
+}
+#hovertable td {
+	width:100px;
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #a9c6c9;
+}

@@ -1,0 +1,55 @@
+﻿<html>	
+	<head>	
+		<title>流表</title>
+		<link href="./css/intro.css" rel="stylesheet" type="text/css" />
+		<script src="js/jquery-1.12.3.js" type="text/javascript"></script>
+		<script src="js/jquery.json.min.js" type="text/javascript"></script>
+		<script>
+			$(document).ready(function() {
+				function getUrlParam(name){
+					var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+					var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+					if (r!=null) return unescape(r[2]); return null; //返回参数值
+				} 
+				var submitDataForFlowtable = getUrlParam('id');
+				if(submitDataForFlowtable == null){
+					$("#title").html("<h2>流表</h2>");
+				}else{
+					$("#title").html("<h2>"+submitDataForFlowtable +"流表</h2>");
+				}
+				
+				var getFlowTable={		//jQuery的AJAX执行的配置对象
+					type:"POST",	//设置请求方式，默认为GET，
+					url:"flowtable.do",
+					dataType:'json',    //设置期望的返回格式，因服务器返回json格式，这里将数据作为json格式对待
+					contentType: "application/json; charset=utf-8",
+					data:$.toJSON(submitDataForFlowtable),
+					success:function (flowTableData){
+						flowTableResult = eval(flowTableData);
+						var flowTable = "<tr><th>流表级别</th><th>匹配域</th><th>优先级</th><th>动作</th></tr>";
+						for(var i = 0; i < flowTableResult.table.length; i++){
+							for(var j = 0; j < flowTableResult.table[i].flow.length; j++){
+								flowTable = flowTable + "<tr><td>" + flowTableResult.table[i].id + "级流表" + "</td><td> " + JSON.stringify(flowTableResult.table[i].flow[j].match) + "</td><td>" + flowTableResult.table[i].flow[j].priority + "</td><td>" + JSON.stringify(flowTableResult.table[i].flow[j].instructions.instruction) + "</td></tr>";
+							}
+						}
+						$("#hovertable").html(flowTable);
+						$("tr").mouseover(function(){
+							$(this).css("backgroundColor","#ffff66");
+						})
+						$("tr").mouseout(function(){
+							$(this).css("backgroundColor","#d4e3e5");
+						})
+					},		 
+					error:function(err){
+						alert("error");
+					}
+				}
+				$.ajax(getFlowTable);
+			})
+		</script>
+	</head>
+	<body>
+		<div id="title"></div>
+		<table id="hovertable"></table>
+	</body>
+</html>

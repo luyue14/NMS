@@ -1,0 +1,85 @@
+*{margin:0px;padding:0px}
+body { font-family:Verdana; font-size:14px; margin:0; line-height:150%;}
+
+#container {margin:0px auto 0px;width:100%;overflow:hidden;}
+#canvas { float:left; padding:0px; border:1px solid black; display:block; /* width:70%; */ /* background:#cff; */}
+#sidebar { float:right; width:320px; overflow:auto;overflow-x: hidden;word-wrap: break-word;}
+
+.clearfloat { clear:both; height:0; font-size: 1px; line-height: 0px;}
+
+/*²àÀ¸µÄ¸ñÊ½*/
+			*:focus{
+				outline:none; /* Prevents blue border in Webkit */
+			}
+
+			body {
+				font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /*  */
+			}
+			
+			#top_bit {
+				width:760px;
+				margin: 0 auto;
+			}
+			
+			form {
+				width:300px;
+				margin: 20px auto;
+			}
+
+			p {
+				line-height: 1.6;
+			}
+
+			input {
+				font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+				background-color:#fff;
+				border:1px solid #ccc;
+				font-size:20px;
+				width:300px;
+				min-height:30px;
+				display:block;
+				margin-bottom:16px;
+				margin-top:8px;
+				
+				-webkit-border-radius:5px;
+				-moz-border-radius:5px;
+				border-radius:5px;
+				
+				-webkit-transition: all 0.5s ease-in-out;
+				-moz-transition: all 0.5s ease-in-out;
+				transition: all 0.5s ease-in-out;
+			}
+			
+			input:focus {
+				-webkit-box-shadow:0 0 25px #ccc;
+				-moz-box-shadow:0 0 25px #ccc;
+				box-shadow:0 0 25px #ccc;
+				
+				-webkit-transform: scale(1.05);
+				-moz-transform: scale(1.05);
+				transform: scale(1.05);
+			}
+			
+			/* The interesting bit */
+			
+			input:not(:focus){
+				opacity:0.5;
+			}
+			
+			input:required{
+				background:url("../images/asterisk_orange.png") no-repeat 280px 7px;						
+			}
+
+			input:valid{
+				background:url("../images/tick.png") no-repeat 280px 5px;			
+			}		
+
+			input:focus:invalid{
+				background:url("../images/cancel.png") no-repeat 280px 7px;						
+			}
+
+			input[type=button] {
+				padding:10px;
+				background:none;
+				opacity:1.0;
+			}

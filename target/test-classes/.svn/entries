@@ -2,7 +2,7 @@
 
 dir
 384
-svn://10.108.104.101/openflow/nms/NMS/target/test-classes
+svn://10.108.104.101/openflow/nms/NMS/src/test/java
 svn://10.108.104.101/openflow
 
 

@@ -1,0 +1,16 @@
+package com.spring.model.cluster;
+
+import java.util.List;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+
+public interface ClusterRepository extends MongoRepository<Cluster, String> {
+	public List<Cluster> findAll();
+	public List<Cluster> findByTopoHashcode(int hashCode);
+	public Cluster findByTimeStamp(long timeStamp);
+	public List<Cluster> findBySelected(boolean selected);
+	public Cluster save(Cluster c);
+	public int deleteByTimeStamp(long timeStamp);
+	public void deleteAll();
+}
